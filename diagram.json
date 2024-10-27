@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Pakhomov Semen",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -537, "left": -77.4, "attrs": {} },
+    { "type": "wokwi-ir-remote", "id": "remote1", "top": -614.4, "left": 528, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -645.2, "left": 316.8, "attrs": {} },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": -730.95, "left": -20.98, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo2", "top": -770, "left": 316.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "servo1:PWM", "uno:5", "orange", [ "h0" ] ],
+    [ "servo2:PWM", "uno:6", "orange", [ "h0" ] ],
+    [ "servo1:V+", "uno:5V", "red", [ "h-57.6", "v297.7", "h-176.6" ] ],
+    [ "servo2:V+", "uno:5V", "red", [ "h-67.2", "v412.9", "h-167" ] ],
+    [ "servo1:GND", "uno:GND.2", "black", [ "h-76.8", "v288", "h-147.9" ] ],
+    [ "ir1:VCC", "uno:5V", "red", [ "v76.8", "h259.2", "v288", "h-186.2" ] ],
+    [ "servo2:GND", "uno:GND.3", "black", [ "h-86.4", "v403.2", "h-128.8" ] ],
+    [ "ir1:GND", "uno:GND.1", "black", [ "v96", "h38.4" ] ],
+    [ "ir1:DAT", "uno:2", "orange", [ "v86.4", "h134.4" ] ]
+  ],
+  "dependencies": {}
+}
