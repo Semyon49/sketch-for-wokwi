@@ -3,22 +3,22 @@
   "author": "Pakhomov Semen",
   "editor": "wokwi",
   "parts": [
-    { "type": "wokwi-arduino-uno", "id": "uno", "top": -537, "left": -77.4, "attrs": {} },
-    { "type": "wokwi-ir-remote", "id": "remote1", "top": -614.4, "left": 528, "attrs": {} },
-    { "type": "wokwi-servo", "id": "servo1", "top": -645.2, "left": 316.8, "attrs": {} },
-    { "type": "wokwi-ir-receiver", "id": "ir1", "top": -730.95, "left": -20.98, "attrs": {} },
-    { "type": "wokwi-servo", "id": "servo2", "top": -770, "left": 316.8, "attrs": {} }
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": -100, "attrs": {} },
+    { "type": "wokwi-ir-remote", "id": "remote1", "top": 0, "left": 250, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 50, "left": 500, "attrs": {} },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": -150, "left": -5, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo2", "top": -50, "left": 500, "attrs": {} }
   ],
   "connections": [
-    [ "servo1:PWM", "uno:5", "orange", [ "h0" ] ],
-    [ "servo2:PWM", "uno:6", "orange", [ "h0" ] ],
-    [ "servo1:V+", "uno:5V", "red", [ "h-57.6", "v297.7", "h-176.6" ] ],
-    [ "servo2:V+", "uno:5V", "red", [ "h-67.2", "v412.9", "h-167" ] ],
-    [ "servo1:GND", "uno:GND.2", "black", [ "h-76.8", "v288", "h-147.9" ] ],
-    [ "ir1:VCC", "uno:5V", "red", [ "v76.8", "h259.2", "v288", "h-186.2" ] ],
-    [ "servo2:GND", "uno:GND.3", "black", [ "h-86.4", "v403.2", "h-128.8" ] ],
-    [ "ir1:GND", "uno:GND.1", "black", [ "v96", "h38.4" ] ],
-    [ "ir1:DAT", "uno:2", "orange", [ "v86.4", "h134.4" ] ]
+    [ "servo1:V+", "uno:5V", "red", [ "h-57.6", "v245.7", "h-382.4" ] ],
+    [ "servo2:V+", "uno:5V", "red", [ "h-67.2", "v336.1", "h-372.8" ] ],
+    [ "servo1:GND", "uno:GND.2", "black", [ "h-76.8", "v236", "h-353.7" ] ],
+    [ "servo2:GND", "uno:GND.3", "black", [ "h-86.4", "v326.4", "h-334.6" ] ],
+    [ "uno:GND.1", "ir1:GND", "black", [ "v0" ] ],
+    [ "ir1:DAT", "uno:2", "orange", [ "v52.65", "h99.22" ] ],
+    [ "ir1:VCC", "uno:5V", "red", [ "v43.05", "h156.82", "v230.4", "h-124.8" ] ],
+    [ "servo2:PWM", "uno:6", "orange", [ "h-39.2", "v-57.4", "h-364.8" ] ],
+    [ "servo1:PWM", "uno:5", "orange", [ "h-48.8", "v-147.8", "h-336" ] ]
   ],
   "dependencies": {}
 }
